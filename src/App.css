@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+.btn-white {
+    background-color: #fff !important;
+    color: #000 !important
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: #f4f6f9 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-control {
+    background-color: rgba(0, 0, 0, 0) !important;
+    /* border: 1px solid #E3E3E3 !important; */
+    border-radius: 30px;
+    color: #2c2c2c !important;
+    line-height: normal;
+    font-size: .8571em;
+    height: calc(1.5em + .75rem + 2px) !important;
+    box-shadow: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.add-doctor .form-control {
+    font-weight: 400;
+    font-size: .8571em !important;
 }
 
-.App-link {
-  color: #61dafb;
+.input-group .form-control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child>.dropdown-toggle,
+.input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-right: 0 none !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-block {
+    width: 100% !important;
+}
+
+.dashboard-part .navbar {
+    position: unset !important;
+    width: 100% !important;
+}
+
+.dashboard-part .navbar .dropdown-toggle {
+    position: relative;
+}
+
+.dashboard-part .navbar .dropdown-toggle::after {
+    display: inline-block;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+.dashboard-part .navbar .dropdown-menu {
+    left: 0 !important;
+}
+
+.navbar-header .navbar-brand {
+    font-size: 18px !important;
+}
+
+.badge {
+    border-radius: 2px !important;
+}
+.single-doctor .navbar .notify .heartbit {
+    position: absolute;
+    top: -20px;
+    right: -16px;
+    height: 25px;
+    width: 25px;
+    z-index: 10;
+    border: 4px solid;
+    border-color: #3d4c5a;
+    border-radius: 70px;
+    animation: heartbit 1s ease-out !important;
+    -webkit-animation-iteration-count: infinite !important;
+    animation-iteration-count: infinite !important;
+}
+
+@keyframes  heartbit {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0
+    }
+
+    25% {
+        -webkit-transform: scale(0.1);
+        opacity: .1
+    }
+
+    50% {
+        -webkit-transform: scale(0.5);
+        opacity: .3
+    }
+
+    75% {
+        -webkit-transform: scale(0.8);
+        opacity: .5
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 0
+    }
+}
+.dashboard-part section select
+{
+    padding: 10px 22px;
+    height: fit-content !important;
+}
+.dashboard-part section select option
+{
+    padding: 7px 18px !important;
+    font-size: 14px !important;
+}
+.dashboard-part section .date-body input[type="date"] , .dashboard-part_1 section .date-body input[type="date"]
+{
+    height: auto !important;
+}
+.dashboard-part .wrapper .slider .slider_form
+{
+    height: fit-content !important;
+}
+.dashboard-part .wrapper .main-section
+{
+    margin-top: 100px !important;
 }
